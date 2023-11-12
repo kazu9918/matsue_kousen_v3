@@ -26,6 +26,6 @@ production:
   adapter: mysql2
   encoding: utf8
   database: db/matsue_kousen_production
-  username: root # ここを root に変更する
+  username: admin # ここを root に変更する
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /run/mysqld/mysqld.sock
