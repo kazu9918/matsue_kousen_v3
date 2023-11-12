@@ -25,3 +25,6 @@ test:
 production:
   <<: *default
   database: db/matsue_kousen_production
+  username: root # ここを root に変更する
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/run/mysqld/mysqld.sock # AmazonLinux2 では MySQL と通信するためのソケットファイルはこれ
